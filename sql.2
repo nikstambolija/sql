@@ -1,0 +1,80 @@
+--nik stambolija
+--1
+create table dijaki ( 
+    ime varchar(30)
+)
+select * from dijaki;
+--2
+alter table dijaki
+    add rojen date;
+select * from dijaki;
+--3
+alter table dijaki
+    add oznaka integer;
+select * from dijaki;
+--4
+alter table dijaki
+    drop rojen;
+select * from dijaki;
+--5
+alter table dijaki
+    drop oznaka;
+select * from dijaki;
+--6
+create table tabela1( 
+    stevilka integer
+)
+select * from tabela1;
+--7
+insert into tabela1 values(1);
+select * from tabela1;
+--8
+alter table tabela1
+    add priimek varchar(50);
+select * from tabela1;
+--9
+insert into tabela1 values (2,'Horvat');
+select * from tabela1;
+--10
+alter table tabela1
+    add datum date;
+select * from tabela1;
+--11
+insert into tabela1 values (3,'Novak','01.01.2000');
+select * from tabela1;
+--12
+alter table tabela1 
+    add primer1 integer;
+select * from tabela1;
+--13
+insert into tabela1 values (4,'Kranjc','02.02.2000',65);
+select * from tabela1;
+--14
+alter table tabela1 
+    add primer2 integer;
+select * from tabela1;
+--15
+insert into tabela1 values (5,'Kovačič','03.03.2000',78,189);
+select * from tabela1;
+--16
+alter table tabela1
+    drop primer1;
+select * from tabela1;
+--17
+insert into tabela1 values (6,'Zupančič','04.04.2000',176);
+select * from tabela1;
+--18
+alter table tabela1
+    drop primer2;
+select * from tabela1;
+--19
+insert into tabela1 values (7,'Potočnik','05.05.2000');
+select * from tabela1;
+--20
+alter table tabela1
+    drop datum;
+select * from tabela1;
+--21
+insert into tabela1 values (8,'Kovač');
+select * from tabela1;
+-- konec naloge 16
